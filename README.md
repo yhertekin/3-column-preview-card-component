@@ -1,6 +1,6 @@
 # 3-column preview card component
 
-## [Live]()
+## [Live](https://yhertekin.github.io/3-column-preview-card-component/)
 
 ## Desktop
 
