@@ -1,0 +1,107 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0px;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(3, 280px);
+	width: 750px;
+	height: 400px;
+}
+
+.container {
+	padding: 30px;
+}
+
+h1 {
+	color: hsl(0, 0%, 95%);
+}
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+button {
+	width: 130px;
+	height: 50px;
+	border-radius: 60px;
+	font-weight: 600;
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	margin-top: 50px;
+}
+button:hover {
+	border: 1px solid hsl(0, 0%, 95%);
+}
+.sedan {
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.sedan button {
+	color: hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+	background-color: hsl(31, 77%, 52%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+.suv {
+	background-color: hsl(184, 100%, 22%);
+}
+.suv button {
+	color: hsl(184, 100%, 22%);
+}
+.suv button:hover {
+	background-color: hsl(184, 100%, 22%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.lux {
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.lux button {
+	color: hsl(179, 100%, 13%);
+}
+.lux button:hover {
+	background-color: hsl(179, 100%, 13%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+@media only screen and (min-width: 768px) {
+	body {
+		align-items: center;
+		height: 100vh;
+	}
+	.main {
+		width: 840px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		height: auto;
+		justify-self: center;
+		align-self: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		margin-top: 10px;
+	}
+	.sedan {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+	.lux {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 0px;
+	}
+}
